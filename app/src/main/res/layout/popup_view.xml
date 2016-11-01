@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/the_new_bg"
+    >
+    <ImageView
+        android:layout_width="303dp"
+        android:layout_height="500dp"
+        android:scaleType="centerCrop"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/imgScreenshot"/>
+    <!--android:scaleX="0.85"-->
+    <!--android:scaleY="0.85"-->
+    <!--底部菜单栏-->
+    <LinearLayout
+        android:id="@+id/pop_bottom_layout"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <LinearLayout
+            style="@style/bottom_layout_option"
+            >
+            <Button
+                android:id="@+id/pop_cancel"
+                android:background="@drawable/pop_cancel"
+                android:layout_width="25dp"
+                android:layout_height="25dp" />
+            <TextView
+                android:id="@+id/tvcancel"
+                style="@style/pop_bottom_text"
+                android:text="@string/cancel"/>
+        </LinearLayout>
+        <LinearLayout
+            style="@style/bottom_layout_option"
+            >
+            <Button
+                android:id="@+id/pop_edit"
+                android:background="@drawable/edit"
+                android:layout_width="25dp"
+                android:layout_height="25dp" />
+            <TextView
+                android:id="@+id/tvedit"
+                style="@style/pop_bottom_text"
+                android:text="@string/edit"/>
+        </LinearLayout>
+        <LinearLayout
+            style="@style/bottom_layout_option"
+            >
+            <Button
+                android:id="@+id/pop_share"
+                android:background="@drawable/share"
+                android:layout_width="25dp"
+                android:layout_height="25dp" />
+            <TextView
+                style="@style/pop_bottom_text"
+                android:text="@string/share"
+                />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
